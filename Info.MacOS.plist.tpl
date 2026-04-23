@@ -8,7 +8,7 @@
 	<key>CFBundleName</key>
 	<string>SmartScope</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.7</string>
+	<string>10.9</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>CFBundleDisplayName</key>
