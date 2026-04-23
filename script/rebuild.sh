@@ -220,10 +220,10 @@ elif [ $OPSYS = "iOS" ]; then
   RELEASE_FILE=${OUTPUT_DIR}/labnation_smartscope.ipa
 elif [ $OPSYS = "MacOS" ]; then
   if [ ${DOCLEAN} = true ]; then
-    "${VSTOOL}" build SmartScope.$OPSYS.sln -c:${CONFIGURATION} -t:Clean
+    msbuild SmartScope.$OPSYS.sln /t:Clean /p:Configuration=${CONFIGURATION}
   fi
   if [ $DOBUILD = true ]; then
-    "${VSTOOL}" build SmartScope.$OPSYS.sln -c:${CONFIGURATION} -t:${TARGET}
+    msbuild SmartScope.$OPSYS.sln /t:${TARGET} /p:Configuration=${CONFIGURATION}
   fi
   echo Cleaning DMG folder
   mkdir -p ${DMG_WORK_DIR}
