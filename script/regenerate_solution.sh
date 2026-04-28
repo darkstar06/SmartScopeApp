@@ -118,7 +118,7 @@ echo $VERSION_STRING > version.txt
 echo VERSION CODE = ${VERSION_CODE}
 
 CMD_FIND=/usr/bin/find
-CMD_CONVERT="${CONVERT_PATH}convert"
+CMD_CONVERT="magick"
 
 #Version files in SmartScope project
 PRJ_DIR=./
